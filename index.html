@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Generator</h1>
+
+        <!-- About Section -->
+        <div class="section">
+            <h2>About</h2>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="fatherName">Last Name:</label>
+            <input type="text" id="LastName" placeholder="Enter your Last name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your address">
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <h2>Education</h2>
+            <div id="education-container">
+                <!-- Dynamic education fields will be added here -->
+            </div>
+            <button id="addEducationBtn">Add Education</button>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2>Skills</h2>
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" placeholder="Enter your skills (comma separated)">
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section">
+            <h2>Experience</h2>
+            <div id="experience-container">
+                <!-- Dynamic experience fields will be added here -->
+            </div>
+            <button id="addExperienceBtn">Add Experience</button>
+        </div>
+
+        <!-- Generate and Save -->
+        <button id="generateBtn">Generate Resume</button>
+        <button id="saveBtn">Save Resume</button>
+        <button id="downloadBtn">Download Resume</button>
+
+        <!-- Resume Preview -->
+        <div class="resume-preview" id="resumePreview" contenteditable="true">
+            <!-- Editable generated resume preview will appear here -->
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>

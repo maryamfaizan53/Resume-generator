@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",                      // JavaScript version to compile to (ES5 for wide compatibility)
+    "module": "commonjs",                  // Module system to use (can also be 'es6', 'amd', etc.)
+    "outDir": "./dist",                    // Directory to output compiled JavaScript
+    "rootDir": "./src",                    // Directory where TypeScript files are located
+    "strict": true,                        // Enable strict type checking
+    "esModuleInterop": true,               // Fixes interoperability issues between CommonJS and ES modules
+    "forceConsistentCasingInFileNames": true, // Enforces consistent case across import paths
+    "skipLibCheck": true                   // Skips type checking for all declaration files (.d.ts)
+  },
+  "include": [
+    "src/**/*"                             // Include all files in the 'src' folder
+  ],
+  "exclude": [
+    "node_modules"                         // Exclude 'node_modules' folder
+  ]
+}
+
